@@ -1,0 +1,27 @@
+What is a gitignore file and what should it include for a Java project? 
+
+You can choose to ignore a file that you already committed using the .gitignore file. When you don't want to recommit a file, you utilize it. It allows for single-source building and reduces the risk of making expensive commits to files that shouldn't be versioned. For a JAVA project,  being developed in Eclipse for instance, may include the following:
+bin/
+tmp/
+.metadata
+.classpath
+.project
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.factorypath
+
+What does fast-forward in git mean? 
+
+In Git, updating the HEAD pointer so that its new value is a direct descendent of the previous value is referred to as "fast forwarding." In other words, the parent, grandparent, or great-grandparent is the prior value. If there are no changes to your local master, you may fast-forward by simply updating it to link to the same commit as latestorigin/master.
+
+Why should you have different branches?
+
+Branches enable us to work on different lines while on a development project without messing the main line of the project. Contributors are able to get their work reviewed before integration into a project. Also if a project has different or multiple releases, branches help us in doing so. 
+
+In a project how many remote Git repositories do you usually have?
+
+Depending on the codebase, there can be multiple remote repositories but there can only be one remote repository named origin.
